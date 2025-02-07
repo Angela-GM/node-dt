@@ -6,8 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
-    "start:dev": "echo 'Hola mundo desde dev' "
+    "dev": "nodemon src/app.js",
+    "start:dev": "echo 'Hola mundo desde dev' ",
+    "start:stag": "echo 'Hola mundo desde Staging' "
+
   },
   "author": "Angela GM",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
