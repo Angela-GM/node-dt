@@ -9,11 +9,14 @@
     "dev": "nodemon src/app.js",
     "start:dev": "echo 'Hola mundo desde dev' ",
     "start:stag": "echo 'Hola mundo desde Staging' "
-
   },
   "author": "Angela GM",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "get-age": "^1.0.1",
+    "uuid": "^11.0.5"
   }
 }
