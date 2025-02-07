@@ -1,6 +1,6 @@
 const {emailTemplate} = require('./js-foundation/01-template');
 require('./js-foundation/02-destructuring')
-const {getUserById} = require('./js-foundation/03-callbacks')
+const {getUserById} = require('./js-foundation/04-arrow')
 
 
 // import { emailTemplate } from './js-foundation/01-template'
@@ -8,15 +8,15 @@ const {getUserById} = require('./js-foundation/03-callbacks')
 // console.log(templateExports.emailTemplate)
 // console.log(emailTemplate);
 
-const id = 3;
+const id = 2;
 
 
 // getUserById(1, (error, user) => {
-getUserById(id, function (error, user) {
+getUserById(id,  (error, user) => {
   if (error) {
         throw new Error( error)
-
     }
     console.log({user})
 
 })
+
