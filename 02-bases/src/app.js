@@ -2,18 +2,42 @@
 // const { getUserById } = require('./js-foundation/04-arrow');
 // require('./js-foundation/02-destructuring')
 // const {getUserById} = require('./js-foundation/04-arrow')
-const { getUuid, getAge } = require('../src/plugins');
-
-const {buildMakePerson} = require('./js-foundation/05-factory');
-
-const makePerson = buildMakePerson( {getUuid, getAge})
 
 
-const obj = {name: 'John', birthdate: '1982-12-01'}
+const getPokemonById = require('./js-foundation/06-promises')
 
-const john = makePerson(obj)
+const name = getPokemonById(82)
 
-console.log({john})
+console.log(name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// !Factory functions y uso
+// const { getUuid, getAge } = require('../src/plugins');
+
+// const {buildMakePerson} = require('./js-foundation/05-factory');
+
+// const makePerson = buildMakePerson( {getUuid, getAge})
+
+
+// const obj = {name: 'John', birthdate: '1982-12-01'}
+
+// const john = makePerson(obj)
+
+// console.log({john})
 
 
 
