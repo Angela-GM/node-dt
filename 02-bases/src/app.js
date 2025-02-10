@@ -2,7 +2,19 @@
 // const { getUserById } = require('./js-foundation/04-arrow');
 // require('./js-foundation/02-destructuring')
 // const {getUserById} = require('./js-foundation/04-arrow')
-const {buildPerson} = require('./js-foundation/05-factory');
+const { getUuid, getAge } = require('../src/plugins');
+
+const {buildMakePerson} = require('./js-foundation/05-factory');
+
+const makePerson = buildMakePerson( {getUuid, getAge})
+
+
+const obj = {name: 'John', birthdate: '1982-12-01'}
+
+const john = makePerson(obj)
+
+console.log({john})
+
 
 
 // import { emailTemplate } from './js-foundation/01-template'
