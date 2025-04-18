@@ -6,10 +6,16 @@
 
 const getPokemonById = require('./js-foundation/06-promises')
 
-const name = getPokemonById(82)
+getPokemonById(10)
+.then((pokemon) => console.log({pokemon}))
+.catch((error) => console.log(error))
+.finally (() => console.log('Terminado'))
 
-console.log(name)
 
+
+
+// token de acceso
+// Públicas
 
 
 
