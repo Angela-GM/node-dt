@@ -3,27 +3,25 @@
 // require('./js-foundation/02-destructuring')
 // const {getUserById} = require('./js-foundation/04-arrow')
 
+// const { buildLogger } = require('./plugins');
 
-const getPokemonById = require('./js-foundation/06-promises')
+// const logger = buildLogger('app.js');
 
-getPokemonById(10)
-.then((pokemon) => console.log({pokemon}))
-.catch((error) => console.log(error))
-.finally (() => console.log('Terminado'))
+// logger.log('Hello world')
+// logger.error('Esto es algo malo')
+
+// const getPokemonById = require('./js-foundation/06-promises')
+
+// getPokemonById(10)
+// .then((pokemon) => console.log({pokemon}))
+// .catch((error) => console.error(error))
+// .finally (() => console.log('Finalmente'))
 
 
 
 
 // token de acceso
 // Públicas
-
-
-
-
-
-
-
-
 
 
 
