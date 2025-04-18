@@ -5,15 +5,17 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "start:dev": "echo 'Hola mundo desde dev' ",
-    "start:stag": "echo 'Hola mundo desde Staging' "
+    "dev": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
   },
   "author": "Angela GM",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@types/node": "^22.14.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "axios": "^1.8.4",
