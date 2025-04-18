@@ -3,13 +3,13 @@
 // require('./js-foundation/02-destructuring')
 // const {getUserById} = require('./js-foundation/04-arrow')
 
-import { buildLogger } from "./plugins/logger.plugin";
+// import { buildLogger } from "./plugins/logger.plugin";
 
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('Hello world')
-logger.error('Esto es algo malo')
+// logger.log('Hello world')
+// logger.error('Esto es algo malo')
 
 // const getPokemonById = require('./js-foundation/06-promises')
 
